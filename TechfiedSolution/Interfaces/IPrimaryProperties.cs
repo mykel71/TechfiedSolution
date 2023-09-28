@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿namespace TechfiedSolution.Interfaces;
 
-namespace TechfiedSolution.Interfaces
+public interface IPrimaryProperties
 {
-    public interface IPrimaryProperties
-    {
-        int Id { get; set; }
-        string Title { get; set; }
-    }
+    int Id { get; set; }
+    string Title { get; set; }
 }
