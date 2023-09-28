@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using TechfiedSolution.Entities;
+﻿using System.Linq;
 
-namespace TechfiedSolution.Models
+namespace TechfiedSolution.Models;
+
+public class GroupedCategoryItemsByCategoryModel
 {
-    public class GroupedCategoryItemsByCategoryModel
-    {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public IGrouping<int, CategoryItemDetailsModel> Items { get; set; }
-    }
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public IGrouping<int, CategoryItemDetailsModel> Items { get; set; }
 }
