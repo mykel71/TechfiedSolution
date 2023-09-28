@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechfiedSolution", "TechfiedSolution\TechfiedSolution.csproj", "{F3EC819D-598C-4E87-B896-72D30EF44F9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechfiedSolution.Tests", "TechfiedSolution.Tests\TechfiedSolution.Tests.csproj", "{9885BCF3-E89B-4BDF-83F1-BE2DAC973EC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F3EC819D-598C-4E87-B896-72D30EF44F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3EC819D-598C-4E87-B896-72D30EF44F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3EC819D-598C-4E87-B896-72D30EF44F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9885BCF3-E89B-4BDF-83F1-BE2DAC973EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9885BCF3-E89B-4BDF-83F1-BE2DAC973EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9885BCF3-E89B-4BDF-83F1-BE2DAC973EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9885BCF3-E89B-4BDF-83F1-BE2DAC973EC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
