@@ -19,11 +19,11 @@ public class CategoryControllerTest
             new Category { Id = 2, Title = "Category 2", ThumbnailImagePath = "default.jpg" }
         };
 
-        var dbContextMock = new DbContextOptionsBuilder<ApplicationDbContext>()
+        var dbContextOptions = new DbContextOptionsBuilder<ApplicationDbContext>()
             .UseInMemoryDatabase(databaseName: "TestDatabase")
             .Options;
 
-        using var dbContext = new ApplicationDbContext(dbContextMock);
+        using var dbContext = new ApplicationDbContext(dbContextOptions);
         dbContext.AddRange(categories);
         dbContext.SaveChanges();
 
@@ -35,8 +35,9 @@ public class CategoryControllerTest
         // Assert
         var viewResult = Assert.IsType<ViewResult>(result);
         var model = Assert.IsAssignableFrom<List<Category>>(viewResult.Model);
-        Assert.Equal(2, model.Count); // Check that there are 2 categories in the model
+        Assert.Equal(3, model.Count); // Check that there are 2 categories in the model
     }
+
 
     [Fact]
     public async Task Details_IdIsNull_ReturnsNotFound()
@@ -66,7 +67,7 @@ public class CategoryControllerTest
 
         using var dbContext = new ApplicationDbContext(dbContextMock);
         var controller = new CategoryController(dbContext);
-        var category = new Category { Id = 2, Title = "Category 2", ThumbnailImagePath = "default.jpg" };
+        var category = new Category { Id = 3, Title = "Test Category 3", ThumbnailImagePath = "default.jpg" };
         // Act
         var result = await controller.Create(category);
 
